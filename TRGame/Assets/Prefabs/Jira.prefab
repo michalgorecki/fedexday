@@ -95,16 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb7a2ea7516473b408aef5a85d2b40b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletJira: {fileID: 0}
-  visibility: 0
-  shoot: 0.1
-  Gun: {fileID: 0}
-  Bullet: {fileID: 0}
-  Player: {fileID: 0}
+  bulletJira: {fileID: 1940469163210172, guid: 5cbe289a98dcf9747829d2c1a57b3861, type: 2}
+  isAlive: 0
   shootInterval: 0
   shootForce: 0
-  delay: 0
-  isAlive: 0
+  head: {fileID: 0}
 --- !u!136 &136068309317120168
 CapsuleCollider:
   m_ObjectHideFlags: 1
