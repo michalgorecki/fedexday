@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 33265253890286414}
   - component: {fileID: 135896505903921216}
   - component: {fileID: 23466413846539074}
+  - component: {fileID: 114950145870113148}
   m_Layer: 0
   m_Name: Coffee
   m_TagString: Untagged
@@ -113,6 +114,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1706258263012320}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &114950145870113148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1706258263012320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5227322f6e0c05845884b66acc03ceb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coffeeValue: 0.1
 --- !u!135 &135896505903921216
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -123,7 +136,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &212724493017677928
 SpriteRenderer:
