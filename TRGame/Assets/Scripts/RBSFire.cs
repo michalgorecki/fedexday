@@ -44,7 +44,7 @@ public class RBSFire : MonoBehaviour
 
 		if (Time.frameCount == frameCount)
 		{
-			frameCount += 20;
+			frameCount += 60;
 			//The Bullet instantiation happens here.
 			GameObject Temporary_Bullet_Handler;
 			Temporary_Bullet_Handler = Instantiate(Bullet, Bullet_Emitter.transform.position, Bullet_Emitter.transform.rotation) as GameObject;
