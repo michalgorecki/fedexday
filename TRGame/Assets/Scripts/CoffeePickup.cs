@@ -15,11 +15,13 @@ public class CoffeePickup : MonoBehaviour {
 		
 	}
 
-	void OnCollisionEnter(Collision collision)	{
+	void OnTriggerEnter(Collision collision)	{
 	
 		CoffeePower c = FindObjectOfType<CoffeePower> ();
 		if (c != null) {
 			c.UpdateCoffeeMeter (coffeeValue);
 		}
+
+		Destroy (gameObject);
 	}
 }
