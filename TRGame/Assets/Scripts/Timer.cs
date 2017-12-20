@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
-	private string timerMessage = "Left from WLA: ";
+	private string timerMessage = "WLA left: ";
 	//Wartość startowa dla odliczania
-	private const float TOTAL_WLA = 20.0f;
+	private const float TOTAL_WLA = 2.0f;
 	public const int FONT_SIZE = 20;
 	//Pozycja boxa
-	private const int X_POSITION = 300;
-	private const int Y_POSITION = 30;
+	private const int X_POSITION = 310;
+	private const int Y_POSITION = 40;
 	//flaga dotycząca tego, czy timer przekroczył 0
 	public bool WLA_MISSED = false;
 
@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour {
 		if (timer >= 0 && !WLA_MISSED) {
 			progressBar.fillAmount = Mathf.Clamp (timer / TOTAL_WLA, 0, 1.0f);
 		}
-		else if (timer < 0 && !WLA_MISSED) {
+		else if (timer <= 0 && !WLA_MISSED) {
 			Debug.Log ("WLA missed!");
 			timerMessage = "Missed WLA: ";
 			WLA_MISSED = true;
