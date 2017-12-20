@@ -8,7 +8,8 @@ public class Opponent : MonoBehaviour {
 
     public float visibility;
     public int isAlive;
-
+    public float shootInterval;
+    public float shootForce;
     private float shootTime;
 
     // Use this for initialization
