@@ -7,9 +7,21 @@ public class Timer : MonoBehaviour {
 	public const int FONT_SIZE = 20;
 	public bool WLA_MISSED = false;
 	float timer = 1.0f;
-	public GUIStyle myStyle = new GUIStyle();
+	public GUIStyle myStyle;
+
+	public  Texture2D mTexture;
 
 
+	void Start(){
+		Debug.Log ("Start() called!");
+		mTexture = new Texture2D(1,1);
+		mTexture.SetPixel (0, 0, Color.red);
+		myStyle = new GUIStyle();
+		myStyle.alignment = TextAnchor.MiddleCenter;
+		myStyle.fontSize = FONT_SIZE;
+		myStyle.normal.background = mTexture;
+
+	}
 
 
 	void Update()
@@ -24,8 +36,12 @@ public class Timer : MonoBehaviour {
 	}
 
 	void OnGUI()
-	{   myStyle.alignment = TextAnchor.LowerCenter;
-		myStyle.fontSize = FONT_SIZE;
+	{   
+
+		
+
+
+
 		if (WLA_MISSED) {
 			myStyle.normal.textColor = Color.red;
 			GUI.skin.textArea.alignment = TextAnchor.MiddleCenter;
