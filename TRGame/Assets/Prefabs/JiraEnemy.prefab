@@ -54,14 +54,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1510441443973942}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5048, y: -0.4466, z: 0}
-  m_LocalScale: {x: 2.0096636, y: 1.4465821, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -6.82774, y: 1.5, z: 0.24909115}
+  m_LocalScale: {x: 1, y: 0.7, z: 1}
   m_Children:
   - {fileID: 4946593674591102}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4946593674591102
 Transform:
   m_ObjectHideFlags: 1
@@ -89,7 +89,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -181,15 +181,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletJira: {fileID: 1940469163210172, guid: 5cbe289a98dcf9747829d2c1a57b3861, type: 2}
-  visibility: 0
-  shoot: 0.1
-  Gun: {fileID: 0}
-  Bullet: {fileID: 0}
-  Player: {fileID: 0}
+  isAlive: 1
   shootInterval: 1
   shootForce: 2
-  delay: 0
-  isAlive: 0
+  head: {fileID: 1413875506955688}
 --- !u!136 &136385991925504062
 CapsuleCollider:
   m_ObjectHideFlags: 1
