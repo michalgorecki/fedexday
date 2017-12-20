@@ -62,8 +62,8 @@ GameObject:
   - component: {fileID: 114046598236003794}
   - component: {fileID: 114567995076270630}
   m_Layer: 0
-  m_Name: Player 1
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,7 +151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4027414046827166}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BulletEmiter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -621,8 +621,8 @@ MonoBehaviour:
   Bullet_Emitter: {fileID: 1983007607462136}
   Bullet: {fileID: 1662704572945040, guid: f062f14dbf0d2f043a03ea3da8138f7b, type: 2}
   Bullet_Forward_Force: 1000
-  maxDistance: 5
-  travelTime: 5
+  maxDistance: 10
+  travelTime: 1
 --- !u!114 &114683497763854830
 MonoBehaviour:
   m_ObjectHideFlags: 1
