@@ -12,7 +12,7 @@ public class Fire : MonoBehaviour
     //Enter the Speed of the Bullet from the Component Inspector.
     public float Bullet_Forward_Force;
 
-    public int frameCount = 1;
+    public static int frameCount = 1;
 
     private Vector3 originalPosition;
     private Vector3 destination;
