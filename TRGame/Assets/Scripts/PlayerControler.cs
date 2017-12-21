@@ -22,14 +22,15 @@ public class PlayerControler : MonoBehaviour {
 
         rb.MovePosition(transform.position + movement * speed);
 
-        if (Input.GetKeyDown("up"))
+        if (Input.GetKeyDown("up") && onGround == true)
         {
             rb.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
+            onGround = false;
         }
         
         if (Input.GetKeyUp("up"))
         {
-            rb.AddForce(Vector3.up * -jumpSpeed, ForceMode.Impulse);
+            rb.AddForce(0.5f * Vector3.up * -jumpSpeed, ForceMode.Impulse);
         }
 
        }
