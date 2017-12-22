@@ -33,6 +33,11 @@ public class PlayerControler : MonoBehaviour {
             rb.AddForce(0.5f * Vector3.up * -jumpSpeed, ForceMode.Impulse);
         }
 
+        if (transform.position.y < -10.0f)
+        {
+            rb.MovePosition(new Vector3(-10.0f, 1.0f, 0.0f));
+        }
+
        }
     void OnCollisionStay(Collision collision)
     {

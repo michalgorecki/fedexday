@@ -32,7 +32,7 @@ public class Opponent : MonoBehaviour {
             bullet.GetComponent<Rigidbody>().AddForce(head.transform.forward* shootForce, ForceMode.Impulse);
             shootTime = Time.time;
             // destroy it after 4 sec
-            Destroy(bullet, 4.0f);
+            Destroy(bullet, 2.0f);
         }
  
     }
